@@ -1,0 +1,56 @@
+
+# III parte {-}
+
+# La diffusione del libro
+
+Il libro si è diffuso ...
+
+# Produzione libro
+
+```{r echo=FALSE, out.width = "30%", fig.align = "center"}
+knitr::include_graphics("images/logo.png")
+
+```
+
+
+
+Il libro...
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+my_tbl <- tibble::tribble(
+  ~d, ~g, ~h,
+   2,  4,  5,
+   3,  4,  5,
+   3,  3,  4
+  )
+
+require(knitr)
+kable(my_tbl, digits = 3, row.names = FALSE, align = "c",
+              caption = "Tabella 1")
+
+```
+
+
+```{r echo=FALSE, message=FALSE,warning=FALSE}
+Tabella_2 <- tibble::tribble(
+  ~a, ~b, ~c,
+   6,  5,  4,
+   2,  4,  5
+  )
+
+require(knitr)
+kable(Tabella_2, digits = 3, row.names = FALSE, align = "c",
+              caption = "Tabella 2")
+
+```
+
+
+Inoltre, il libro...
+
+<center><p> Tabella 3 </p></center>
+
+| Produzione di   libri  | valore assoluto | Variazione percentuale  |
+|------------------------|-----------------|-------------------------|
+| opere pubblicate       |     100.000     |           11,1          |
+| copie stampate         |     300.000     |           11,7          |
+| editori attivi         |      2.000      |           -5,5          |

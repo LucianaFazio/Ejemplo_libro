@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 4 Produzione libro | Esempio Libro</title>
+  <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 4 Produzione libro | Esempio Libro" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="/images/logo.png" />
+  <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 4 Produzione libro | Esempio Libro" />
+  
+  <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="twitter:image" content="/images/logo.png" />
+
+<meta name="author" content="LF" />
+
+
+<meta name="date" content="2023-07-17" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="la-diffusione-del-libro.html"/>
+<link rel="next" href="bibliografia.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Presentazione</a></li>
+<li class="chapter" data-level="" data-path="ringrazimenti.html"><a href="ringrazimenti.html"><i class="fa fa-check"></i>Ringrazimenti</a></li>
+<li class="chapter" data-level="" data-path="introduzione.html"><a href="introduzione.html"><i class="fa fa-check"></i>Introduzione</a></li>
+<li class="chapter" data-level="" data-path="i-parte.html"><a href="i-parte.html"><i class="fa fa-check"></i>I parte</a></li>
+<li class="chapter" data-level="1" data-path="storia.html"><a href="storia.html"><i class="fa fa-check"></i><b>1</b> Storia</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="storia.html"><a href="storia.html#antichità"><i class="fa fa-check"></i><b>1.1</b> Antichità</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="storia.html"><a href="storia.html#le-tavolette"><i class="fa fa-check"></i><b>1.1.1</b> Le tavolette</a></li>
+<li class="chapter" data-level="1.1.2" data-path="storia.html"><a href="storia.html#egiziani-e-romani"><i class="fa fa-check"></i><b>1.1.2</b> Egiziani e Romani</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="storia.html"><a href="storia.html#medioevo"><i class="fa fa-check"></i><b>1.2</b> Medioevo</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="ii-parte.html"><a href="ii-parte.html"><i class="fa fa-check"></i>II Parte</a></li>
+<li class="chapter" data-level="2" data-path="formati-dei-libri.html"><a href="formati-dei-libri.html"><i class="fa fa-check"></i><b>2</b> Formati dei libri</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="formati-dei-libri.html"><a href="formati-dei-libri.html#parti-del-libro"><i class="fa fa-check"></i><b>2.1</b> Parti del libro</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="iii-parte.html"><a href="iii-parte.html"><i class="fa fa-check"></i>III parte</a></li>
+<li class="chapter" data-level="3" data-path="la-diffusione-del-libro.html"><a href="la-diffusione-del-libro.html"><i class="fa fa-check"></i><b>3</b> La diffusione del libro</a></li>
+<li class="chapter" data-level="4" data-path="produzione-libro.html"><a href="produzione-libro.html"><i class="fa fa-check"></i><b>4</b> Produzione libro</a></li>
+<li class="chapter" data-level="5" data-path="bibliografia.html"><a href="bibliografia.html"><i class="fa fa-check"></i><b>5</b> Bibliografia</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Esempio Libro</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="produzione-libro" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">Chapter 4</span> Produzione libro<a href="produzione-libro.html#produzione-libro" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><img src="images/Logo.png" width="30%" style="display: block; margin: auto;" /></p>
+<p>Il libro…</p>
+<table>
+<caption><span id="tab:unnamed-chunk-2">Table 4.1: </span>Tabella 1</caption>
+<thead>
+<tr class="header">
+<th align="center">d</th>
+<th align="center">g</th>
+<th align="center">h</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">2</td>
+<td align="center">4</td>
+<td align="center">5</td>
+</tr>
+<tr class="even">
+<td align="center">3</td>
+<td align="center">4</td>
+<td align="center">5</td>
+</tr>
+<tr class="odd">
+<td align="center">3</td>
+<td align="center">3</td>
+<td align="center">4</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption><span id="tab:unnamed-chunk-3">Table 4.2: </span>Tabella 2</caption>
+<thead>
+<tr class="header">
+<th align="center">a</th>
+<th align="center">b</th>
+<th align="center">c</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">6</td>
+<td align="center">5</td>
+<td align="center">4</td>
+</tr>
+<tr class="even">
+<td align="center">2</td>
+<td align="center">4</td>
+<td align="center">5</td>
+</tr>
+</tbody>
+</table>
+<p>Inoltre, il libro…</p>
+<center>
+<p>
+Tabella 3
+</p>
+</center>
+<table>
+<thead>
+<tr class="header">
+<th>Produzione di libri</th>
+<th>valore assoluto</th>
+<th>Variazione percentuale</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>opere pubblicate</td>
+<td>100.000</td>
+<td>11,1</td>
+</tr>
+<tr class="even">
+<td>copie stampate</td>
+<td>300.000</td>
+<td>11,7</td>
+</tr>
+<tr class="odd">
+<td>editori attivi</td>
+<td>2.000</td>
+<td>-5,5</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="la-diffusione-del-libro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="bibliografia.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/04-III_parte.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{book}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{booktabs}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[]{natbib}
+\bibliographystyle{plainnat}
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Esempio Libro},
+  pdfauthor={LF},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Esempio Libro}
+\author{LF}
+\date{2023-07-17}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth,height=\textheight]{images/logo.png}
+\caption{Libro}
+\end{figure}
+
+\hypertarget{presentazione}{%
+\chapter*{Presentazione}\label{presentazione}}
+\addcontentsline{toc}{chapter}{Presentazione}
+
+Questo libro è\ldots{}
+
+\hypertarget{ringrazimenti}{%
+\chapter*{Ringrazimenti}\label{ringrazimenti}}
+\addcontentsline{toc}{chapter}{Ringrazimenti}
+
+Si ringrazia\ldots{}
+
+\hypertarget{introduzione}{%
+\chapter*{Introduzione}\label{introduzione}}
+\addcontentsline{toc}{chapter}{Introduzione}
+
+Lo scopo di questo libro è..
+
+\hypertarget{i-parte}{%
+\chapter*{I parte}\label{i-parte}}
+\addcontentsline{toc}{chapter}{I parte}
+
+\hypertarget{storia}{%
+\chapter{Storia}\label{storia}}
+
+Il libro\ldots{}\footnote{per maggiori informazioni vedere \citet{Book}}
+
+\hypertarget{antichituxe0}{%
+\section{Antichità}\label{antichituxe0}}
+
+I libro\ldots{}
+
+\hypertarget{le-tavolette}{%
+\subsection{Le tavolette}\label{le-tavolette}}
+
+Le tavolette
+
+\hypertarget{egiziani-e-romani}{%
+\subsection{Egiziani e Romani}\label{egiziani-e-romani}}
+
+Le civiltà \ldots.
+
+\hypertarget{medioevo}{%
+\section{Medioevo}\label{medioevo}}
+
+Durante il Medioevo
+
+\hypertarget{ii-parte}{%
+\chapter*{II Parte}\label{ii-parte}}
+\addcontentsline{toc}{chapter}{II Parte}
+
+\hypertarget{formati-dei-libri}{%
+\chapter{Formati dei libri}\label{formati-dei-libri}}
+
+I libri a stampa\ldots{}
+
+XX sostiene \ldots{} \citet{Illibro}
+
+\hypertarget{parti-del-libro}{%
+\section{Parti del libro}\label{parti-del-libro}}
+
+Le parti del libro sono:
+- colophon
+- copertina \footnote{Inlcude: aletta, prima di copertina, quinta di copertina.}
+- frontespizio
+
+\hypertarget{iii-parte}{%
+\chapter*{III parte}\label{iii-parte}}
+\addcontentsline{toc}{chapter}{III parte}
+
+\hypertarget{la-diffusione-del-libro}{%
+\chapter{La diffusione del libro}\label{la-diffusione-del-libro}}
+
+Il libro si è diffuso \ldots{}
+
+\hypertarget{produzione-libro}{%
+\chapter{Produzione libro}\label{produzione-libro}}
+
+\begin{center}\includegraphics[width=0.3\linewidth]{images/logo} \end{center}
+
+Il libro\ldots{}
+
+\begin{table}
+
+\caption{\label{tab:unnamed-chunk-2}Tabella 1}
+\centering
+\begin{tabular}[t]{c|c|c}
+\hline
+d & g & h\\
+\hline
+2 & 4 & 5\\
+\hline
+3 & 4 & 5\\
+\hline
+3 & 3 & 4\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}
+
+\caption{\label{tab:unnamed-chunk-3}Tabella 2}
+\centering
+\begin{tabular}[t]{c|c|c}
+\hline
+a & b & c\\
+\hline
+6 & 5 & 4\\
+\hline
+2 & 4 & 5\\
+\hline
+\end{tabular}
+\end{table}
+
+Inoltre, il libro\ldots{}
+
+Tabella 3
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Produzione di libri & valore assoluto & Variazione percentuale \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+opere pubblicate & 100.000 & 11,1 \\
+copie stampate & 300.000 & 11,7 \\
+editori attivi & 2.000 & -5,5 \\
+\end{longtable}
+
+\hypertarget{bibliografia}{%
+\chapter{Bibliografia}\label{bibliografia}}
+
+  \bibliography{book.bib,packages.bib}
+
+\end{document}
