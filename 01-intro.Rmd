@@ -1,3 +1,4 @@
 # Introduzione {-}
 
 Lo scopo di questo libro è..
+Il libro *tratta* di..
